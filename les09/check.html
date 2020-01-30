@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+  <!-- <meta name="theme-color" content="#fafafa"> -->
+</head>
+
+<body>
+  <form>
+    Enter your name <input type="text" onkeydown="return alphaOnly(event);"/>
+  </form>
+</body>
+<script>
+  function alphaOnly(event) {
+    let key = event.keyCode;
+    //Note that the value of 8 is for the backspace key.
+    let isOk = ((key >= 65 && key <= 90) || key == 8);
+    // if (isOk){
+    if (event.key == 'a'){
+      return true;
+    }else{
+      console.error('wrong key pressed: ' + event.key);
+      return false;
+    }
+  };
+</script>
+</html>

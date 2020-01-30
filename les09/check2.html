@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <p>Enter your name (name can't contain digits)</p>
+        <input type="text" class="name" size="40" placeholder="Enter your name">
+    </div>
+    <script>
+        // document.addEventListener('DOMContentLoaded', () => {
+
+        // document.querySelector('.name').addEventListener('keyup', () => {
+        //     document.querySelector('.name').value = document.querySelector('.name').value.replace(/[^A-Za-z]/g, '');
+            
+        // });
+
+        // document.querySelector('.name')
+        // .addEventListener('keydown', event => isNaN(event.key));
+        document.querySelector('.name').onkeydown = event => !isNaN(event.key);
+</script>
+</body>
+</html>
