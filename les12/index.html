@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/fontawesome-free-5.12.0-web/css/all.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+    <header>
+        <div class="cart"><i style="font-size: 50px;" class="fas fa-shopping-cart"></i><span class="cart-counter">0</span></div>
+        <!-- <div class="filter">
+            От<input type="number" value="1" class="inp-filter-from"> До<input type="number" value="10000" class="inp-filter-to"><button class="btn-filter">Do</button>
+        </div> -->
+        <div class="search">
+            <i class="fas fa-arrow-circle-down btn-sort-from-high" data-dir="high"></i>
+            <i class="fas fa-arrow-circle-up btn-sort-from-low" data-dir="low"></i>
+            <input type="search" class="inp-search" placeholder="персикус"></div>
+    </header>
+    <div id="root">
+        
+        <div class="cards"></div>
+    </div>
+    <div class="modal">
+        <div class="form-in">
+            <div class="wrapper">
+                <input type="mail" autofocus class="in-mail">
+                <button class="btn-mail">Buy</button>
+            </div>
+            <div class="error-up">bad email</div>
+            <div class="error-msg"></div>
+            <table class="tbl-cart"></table>
+        </div>
+    </div>
+    <script src="app/main.js" type="module"></script>
+</body>
+</html>

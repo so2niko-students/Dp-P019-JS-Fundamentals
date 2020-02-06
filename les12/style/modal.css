@@ -1,0 +1,56 @@
+.modal{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(123,123,123, .5);
+    justify-content: center;
+    align-items: center;
+}
+
+.form-in{
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.modal .error{
+    color: red;
+    border: 1px dotted red;
+}
+.error-msg{
+    font-family: monospace;
+    color: red;
+    height: 18pt;
+}
+
+.modal .error-up{
+    display: none;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -100px;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 10px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.modal table{
+    border-collapse: collapse;
+}
+
+.modal td{
+    border: 1px solid grey;
+    padding: 5px;
+}

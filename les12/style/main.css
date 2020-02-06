@@ -1,0 +1,42 @@
+@import 'modal.css';
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: rgba(123,32,23,0.6);
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    font-size: 33px;
+    justify-content: space-between;
+}
+
+#root{
+    margin-top: 50px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    border: 1px dotted grey;
+    padding: 1.5px;
+}
+
+.card .title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.card .price-buy{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18pt;
+}
+
+.card .btn-buy{
+    padding: 5px;
+    background-color: aqua;
+}
